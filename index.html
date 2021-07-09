@@ -1,0 +1,27 @@
+<h1>Learn ML</h1>
+<h2>One stop destination</h2>
+<meta charset="utf-8">
+<body>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script>
+  <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+  <script src="https://unpkg.com/@hpcc-js/wasm/dist/index.min.js" type="application/javascript/"></script>
+<div id="graph" style="text-align: center;"></div>
+<script>
+
+d3.select("#graph").graphviz()
+    .renderDot('digraph {1[label ="Python Syntax"]; \
+    2[label ="Probability Theory"]; \
+    3[label ="Linear Algebra"];\
+    4[label ="Numpy \n library"];\
+    5[label ="pandas \n library"];\
+    6[label ="Reading \n Histograms"];\
+    7[label ="Supervised \n Learning"];\
+    8[label ="Regression \n problem"];\
+    9[label ="Classification \n Problem",href="https://colab.research.google.com/drive/1o-x0c_ynvEenDjPrcoIEi1hdfQhlA5rn?usp=sharing"];\
+    10[label ="Model \n Representation"];11[label ="Gradient \n Descent"];\
+    12[label ="Training and test set"];13[label ="KNN Classifier"];\
+    14[label ="Validation Set"];15[label ="Decision Tree Classifier"];\
+    16[label ="Random Forest Classifier"];\
+    1->8 ;3->8;4->8; 7->8;1->9;3->9;7->9;4->9}');
+</script>
